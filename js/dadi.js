@@ -10,24 +10,25 @@ for (let x = 0; x < userNumber.length; x++) {
     for (let y = 0; y < pcNumber.length; y++) {
         const pcNum = Math.floor(Math.random() * pcNumber[y]);
         
-      
+        if (element > pcNum){
+            match = true  
+        }
+    
+        else{
+        }
     }
 
-    if (element > pcNum){
-        match = true
-       
-    }
-
-    else{
-    }
+   
     
 }
 
 if (match){
     msg = "hai vinto"
-    console.log=msg
+    console.log= msg
 }
 else{
     msg ="hai perso"
-    console.log=msg
+    console.log= msg
 }
+
+alert(msg)
