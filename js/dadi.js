@@ -13,7 +13,7 @@ for (let x = 0; x < userNumber.length; x++) {
       
     }
 
-    if (element > luis){
+    if (element > pcNum){
         match = true
        
     }
