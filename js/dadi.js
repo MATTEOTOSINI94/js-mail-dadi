@@ -1,34 +1,16 @@
-const userNumber = [1,2,3,4,5,6]
-const pcNumber = [1,2,3,4,5,6]
-let msg = ""
-let match = false
+const userNumber = Math.floor(Math.random() * 6)
+const pcNumber =  Math.floor(Math.random() * 6)
 
-for (let x = 0; x < userNumber.length; x++) {
-    const element = Math.floor(Math.random() * userNumber[x]);
-    console.log(element)
+console.log(userNumber)
+console.log(pcNumber)
 
-    for (let y = 0; y < pcNumber.length; y++) {
-        const pcNum = Math.floor(Math.random() * pcNumber[y]);
-        
-        if (element > pcNum){
-            match = true  
-        }
-    
-        else{
-        }
-    }
-
-   
-    
+if(userNumber === pcNumber){
+    alert("pari")
 }
 
-if (match){
-    msg = "hai vinto"
-    console.log= msg
+else if(userNumber < pcNumber){
+    alert("hai vinto")
 }
-else{
-    msg ="hai perso"
-    console.log= msg
+else if(userNumber > pcNumber){
+    alert("hai perso")
 }
-
-alert(msg)
